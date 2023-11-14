@@ -51,6 +51,10 @@ namespace UserProtoBuf {
     static readonly grpc::Marshaller<global::UserProtoBuf.User> __Marshaller_user_User = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.User.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UserProtoBuf.ListUsersRequest> __Marshaller_user_ListUsersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.ListUsersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UserProtoBuf.HelloReply> __Marshaller_user_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.HelloReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UserProtoBuf.ChatMessage> __Marshaller_user_ChatMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.ChatMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UserProtoBuf.GetUserRequest, global::UserProtoBuf.User> __Method_GetUser = new grpc::Method<global::UserProtoBuf.GetUserRequest, global::UserProtoBuf.User>(
@@ -67,6 +71,22 @@ namespace UserProtoBuf {
         "ListUsers",
         __Marshaller_user_ListUsersRequest,
         __Marshaller_user_User);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply> __Method_AddUsers = new grpc::Method<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply>(
+        grpc::MethodType.ClientStreaming,
+        __ServiceName,
+        "AddUsers",
+        __Marshaller_user_User,
+        __Marshaller_user_HelloReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage> __Method_Chat = new grpc::Method<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "Chat",
+        __Marshaller_user_ChatMessage,
+        __Marshaller_user_ChatMessage);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -130,6 +150,26 @@ namespace UserProtoBuf {
       public virtual grpc::AsyncServerStreamingCall<global::UserProtoBuf.User> ListUsers(global::UserProtoBuf.ListUsersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_ListUsers, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncClientStreamingCall<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply> AddUsers(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddUsers(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncClientStreamingCall<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply> AddUsers(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncClientStreamingCall(__Method_AddUsers, null, options);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage> Chat(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Chat(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage> Chat(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_Chat, null, options);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

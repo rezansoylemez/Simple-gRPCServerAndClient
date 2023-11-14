@@ -13,6 +13,8 @@ message User {
 service UserProto {
     rpc GetUser (GetUserRequest) returns (User);
     rpc ListUsers (ListUsersRequest) returns (stream User);
+    rpc AddUsers(stream User) returns (HelloReply);
+    rpc Chat(stream ChatMessage) returns (stream ChatMessage);
 }
 
 message GetUserRequest {
@@ -21,3 +23,12 @@ message GetUserRequest {
 
 message ListUsersRequest { 
 }
+
+message HelloReply {
+  string message = 1;
+}
+
+message ChatMessage {
+  string text = 1;
+}
+ 

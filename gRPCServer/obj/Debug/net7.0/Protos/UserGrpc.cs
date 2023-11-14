@@ -51,6 +51,10 @@ namespace UserProtoBuf {
     static readonly grpc::Marshaller<global::UserProtoBuf.User> __Marshaller_user_User = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.User.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UserProtoBuf.ListUsersRequest> __Marshaller_user_ListUsersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.ListUsersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UserProtoBuf.HelloReply> __Marshaller_user_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.HelloReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UserProtoBuf.ChatMessage> __Marshaller_user_ChatMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserProtoBuf.ChatMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UserProtoBuf.GetUserRequest, global::UserProtoBuf.User> __Method_GetUser = new grpc::Method<global::UserProtoBuf.GetUserRequest, global::UserProtoBuf.User>(
@@ -67,6 +71,22 @@ namespace UserProtoBuf {
         "ListUsers",
         __Marshaller_user_ListUsersRequest,
         __Marshaller_user_User);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply> __Method_AddUsers = new grpc::Method<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply>(
+        grpc::MethodType.ClientStreaming,
+        __ServiceName,
+        "AddUsers",
+        __Marshaller_user_User,
+        __Marshaller_user_HelloReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage> __Method_Chat = new grpc::Method<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "Chat",
+        __Marshaller_user_ChatMessage,
+        __Marshaller_user_ChatMessage);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -90,6 +110,18 @@ namespace UserProtoBuf {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UserProtoBuf.HelloReply> AddUsers(grpc::IAsyncStreamReader<global::UserProtoBuf.User> requestStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task Chat(grpc::IAsyncStreamReader<global::UserProtoBuf.ChatMessage> requestStream, grpc::IServerStreamWriter<global::UserProtoBuf.ChatMessage> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -99,7 +131,9 @@ namespace UserProtoBuf {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetUser, serviceImpl.GetUser)
-          .AddMethod(__Method_ListUsers, serviceImpl.ListUsers).Build();
+          .AddMethod(__Method_ListUsers, serviceImpl.ListUsers)
+          .AddMethod(__Method_AddUsers, serviceImpl.AddUsers)
+          .AddMethod(__Method_Chat, serviceImpl.Chat).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -111,6 +145,8 @@ namespace UserProtoBuf {
     {
       serviceBinder.AddMethod(__Method_GetUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserProtoBuf.GetUserRequest, global::UserProtoBuf.User>(serviceImpl.GetUser));
       serviceBinder.AddMethod(__Method_ListUsers, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::UserProtoBuf.ListUsersRequest, global::UserProtoBuf.User>(serviceImpl.ListUsers));
+      serviceBinder.AddMethod(__Method_AddUsers, serviceImpl == null ? null : new grpc::ClientStreamingServerMethod<global::UserProtoBuf.User, global::UserProtoBuf.HelloReply>(serviceImpl.AddUsers));
+      serviceBinder.AddMethod(__Method_Chat, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::UserProtoBuf.ChatMessage, global::UserProtoBuf.ChatMessage>(serviceImpl.Chat));
     }
 
   }

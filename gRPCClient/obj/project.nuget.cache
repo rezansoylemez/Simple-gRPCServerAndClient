@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "lgVaxTLwK6IIIAlO7zCoVO0Eiq0U7YFJgMDmtbv1gACB6HHccAwwiqUVbXQPwYXIC87pg5XAeSrkCNjItJtDBg==",
+  "dgSpecHash": "a2TIKj/ddLN6ic2sgSboOYma0gsp3UwDUlUevkXx1a1hkTz+cW1SpKfh5Ew6ZuK9D50BzSt91Qid4moWlPZTZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\RezanSoylemez\\Desktop\\gRPC\\gRPCServerAndClient-DotNet\\gRPCClient\\gRPCClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\RezanSoylemez\\.nuget\\packages\\google.protobuf\\3.25.0\\google.protobuf.3.25.0.nupkg.sha512",
+    "C:\\Users\\RezanSoylemez\\.nuget\\packages\\grpc.core.api\\2.59.0\\grpc.core.api.2.59.0.nupkg.sha512",
+    "C:\\Users\\RezanSoylemez\\.nuget\\packages\\grpc.net.client\\2.59.0\\grpc.net.client.2.59.0.nupkg.sha512",
+    "C:\\Users\\RezanSoylemez\\.nuget\\packages\\grpc.net.common\\2.59.0\\grpc.net.common.2.59.0.nupkg.sha512",
+    "C:\\Users\\RezanSoylemez\\.nuget\\packages\\grpc.tools\\2.59.0\\grpc.tools.2.59.0.nupkg.sha512",
+    "C:\\Users\\RezanSoylemez\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -39,6 +39,9 @@ namespace gRPCServer {
 
   }
   #region Messages
+  /// <summary>
+  /// The request message containing the user's name.
+  /// </summary>
   public sealed partial class HelloRequest : pb::IMessage<HelloRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -228,6 +231,9 @@ namespace gRPCServer {
 
   }
 
+  /// <summary>
+  /// The response message containing the greetings.
+  /// </summary>
   public sealed partial class HelloReply : pb::IMessage<HelloReply>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

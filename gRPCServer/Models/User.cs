@@ -1,6 +1,9 @@
+namespace gRPCServer.Models;
+
 public class User
 {
-    int Id { get; set; }
-    string Name { get; set; }
-    string Email { get; set; }
+    public int Id { get; set; }
+    public string? Name { get; set; }
+    public string? Email { get; set; }
 }
+

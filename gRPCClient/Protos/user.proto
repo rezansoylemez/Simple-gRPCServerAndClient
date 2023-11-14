@@ -1,17 +1,24 @@
 syntax = "proto3";
 
-option csharp_namespace = "gRPCServer";
+option csharp_namespace = "UserProtoBuf";
 
 package user;
+
+message User {
+    int32 Id = 1;
+    string Name = 2;
+    string Email = 3;
+}
+
+service UserProto {
+    rpc GetUser (GetUserRequest) returns (User);
+    rpc ListUsers (ListUsersRequest) returns (stream User);
+}
+
+message GetUserRequest {
+    int32 Id = 1;
+}
+
+message ListUsersRequest {
  
-service User {
-  Guid Id =  1;
-  string Name = 2;
-  string Email = 3;
 }
-
-message UserService {
-    rpc GetListUser (ListUsersRequest) returns (stream User);
-}
-
-s

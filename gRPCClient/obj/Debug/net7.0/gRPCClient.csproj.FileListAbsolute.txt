@@ -1,0 +1,14 @@
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\bin\Debug\net7.0\gRPCClient.exe
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\bin\Debug\net7.0\gRPCClient.deps.json
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\bin\Debug\net7.0\gRPCClient.runtimeconfig.json
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\bin\Debug\net7.0\gRPCClient.dll
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\bin\Debug\net7.0\gRPCClient.pdb
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.AssemblyInfoInputs.cache
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.AssemblyInfo.cs
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.csproj.CoreCompileInputs.cache
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.dll
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\refint\gRPCClient.dll
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.pdb
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\gRPCClient.genruntimeconfig.cache
+C:\Users\RezanSoylemez\Desktop\gRPC\gRPCServerAndClient-DotNet\gRPCClient\obj\Debug\net7.0\ref\gRPCClient.dll

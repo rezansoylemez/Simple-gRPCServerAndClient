@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCServer";
+
+package user;
+ 
+service User {
+  Guid Id =  1;
+  string Name = 2;
+  string Email = 3;
+}
+
+message UserService {
+    rpc GetListUser (ListUsersRequest) returns (stream User);
+}
+
+s

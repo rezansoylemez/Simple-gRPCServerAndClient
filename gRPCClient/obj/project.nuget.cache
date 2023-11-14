@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "njnUoNfmNcaAeuGHWzMTAUOAU/TiXSyDJBObxPFnfqJtZB3r8I2rv5ifYwkMlZ5yF9LzrbCBjXrw3Hs1DsVwFA==",
+  "dgSpecHash": "lgVaxTLwK6IIIAlO7zCoVO0Eiq0U7YFJgMDmtbv1gACB6HHccAwwiqUVbXQPwYXIC87pg5XAeSrkCNjItJtDBg==",
   "success": true,
-  "projectFilePath": "/Users/rezansoylemez/Desktop/DotNetProject/gRPCServerStreaming/gRPCClient/gRPCClient.csproj",
+  "projectFilePath": "C:\\Users\\RezanSoylemez\\Desktop\\gRPC\\gRPCServerAndClient-DotNet\\gRPCClient\\gRPCClient.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
